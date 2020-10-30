@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+$placeholder-color: #8d8d8d;
+
+h1{
+    font-size: 5vh;
+}
+h4{
+    font-size: 2.8vh;
+}
+
+h6{
+    font-size: 1.8vh;
+}
+
+
+::-webkit-input-placeholder { color: transparent; } 
+
+:-moz-placeholder { /* Firefox 18- */ color: transparent; } 
+
+::-moz-placeholder { /* Firefox 19+ */ color: transparent; } 
+
+:-ms-input-placeholder { color: transparent; }
+
+
+@media screen and(max-width:320px){
+
+
+::-webkit-input-placeholder { color: $placeholder-color; } 
+
+:-moz-placeholder { /* Firefox 18- */ color: $placeholder-color; } 
+
+::-moz-placeholder { /* Firefox 19+ */ color: $placeholder-color; } 
+
+:-ms-input-placeholder { color: $placeholder-color; }
+
+}

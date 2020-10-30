@@ -1,0 +1,121 @@
+$toolbar-color: #434343;
+$bg-bar-color: #00ace0;
+$bg-form-color:#ffffff;
+$title-color:$bg-bar-color;
+$subtitle-color:#8d8d8d;
+
+
+div.info-bar{
+    position: fixed;
+    width:100vw;
+    height: 6vh;
+    background-color:$toolbar-color;
+    padding-left: 15vw;   
+    display: flex;
+    align-items: center; 
+    top:0
+}
+
+
+div.page-container{
+    width: 100vw;
+    height: 94vh;
+    margin-top: 6vh;
+    display: flex;
+}
+
+div.bg-bar{
+    width: 100vw;
+    height: 30vh;
+    background-color: $bg-bar-color;
+    margin-top: 20vh;
+}
+
+div.form-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+}
+div.form{
+    box-shadow: 1px 1px 19px -2px rgba(0,0,0,0.37);
+    width: 70vh;
+    height: 55vh;
+    position: fixed;
+    background-color: $bg-form-color;
+    top:15vh;
+    left: 15vw;
+}
+
+div.titles{
+    margin-top: 2vh;
+    display: none;
+    h1{
+        text-align: center;
+        color:$title-color;
+        font-size: 4.5vh;
+        margin:0;
+    }
+    h4{
+        margin-top: 1vh;
+        text-align: center;
+        color:$subtitle-color;
+        font-size: 2.8vh;
+    }
+}
+
+@media screen and(max-width:320px){
+
+
+    div.page-container{
+        display: inline;
+    }
+
+    div.form{
+        width: 100vw !important;
+        height: 71vh !important;
+        position: fixed !important;
+        bottom: 0 !important;
+        top:auto !important;
+        background-color: #eeefee;
+    }
+
+
+    div.titles{
+        display: inline;
+        position: fixed;
+        top:6vh;
+    }
+
+}
+
+@media screen and(max-width:768px){
+    div.info-bar{
+        justify-content: center;    
+        padding-left: 0;    
+    }
+
+    div.page-container{
+        display: flex;
+        align-items: center;
+    }
+
+    div.bg-bar{
+        height: 50vh;
+        margin-top: 0;
+    }
+
+    div.form-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.form{
+        width: 90vw;
+        height: 75vh;
+        position: relative;
+        top:0;
+        left: 0;
+    }
+}

@@ -1,0 +1,166 @@
+$title-color:#00ace0;
+$subtitle-color:#8d8d8d;
+$button-color:#b1d641;
+$border-button-color:#9fb844;
+
+
+div.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:4vh 9vh;
+    flex-direction: column;
+}
+
+div.titles{
+    margin-top:3vh;
+    h1{
+        text-align: center;
+        color:$title-color;
+    }
+    h4{
+        text-align: center;
+        color:$subtitle-color;
+    }
+}
+h6{
+    color:$subtitle-color;
+}
+
+div.fields{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.input{
+    margin-bottom: 2vh;
+}
+
+input.input-field{
+    width: 100%;
+    height: 5vh;
+    border:solid 1px #d3d3d3;
+}
+
+button.action-button{
+    width: 100%;
+    height: 6vh;
+    background-color: $button-color;
+    color:white;
+    font-weight: 600;
+    border: none;
+    border-bottom: solid 3px $border-button-color;
+    border-radius: 1vh;
+    font-size: 4vh;
+}
+
+div.actions{
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.link{
+    margin-top:4vh;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+.marca{
+    width: 48%;
+}
+
+.modelo{
+    width: 48%;
+}
+
+.anio{
+    width: 28%;
+}
+
+.email{
+    width: 68%;
+}
+
+
+@media screen and(max-width:320px){
+    div.titles{
+        display: none;
+    }
+    input{
+        height: 8.5vh !important;
+        padding: 2vh;
+    }
+
+    div.input{
+        margin: 0;
+        h6{
+            display: none;
+        }
+    }
+
+    div.form-container{
+        margin:5vh 1.5vh;
+        background-color: #eeefee;
+    }
+
+    button.action-button{
+        margin-top: 2vh;
+        width: 100%;
+        height: 10vh;
+    }
+
+    a.link{
+        font-size: 3vh;
+    }
+
+    .marca{
+        width: 100%;
+
+    }
+    
+    .modelo{
+        width: 65% !important;
+    }
+    
+    .anio{
+        width: 35% !important;
+    }
+    
+    .email{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and(max-width:768px){
+
+    div.input{
+        display: flex;
+        align-items: center;
+        h6{
+            min-width: 30%;
+        }
+    }    
+    .marca{
+        width: 100%;
+    }
+    
+    .modelo{
+        width: 100%;
+    }
+    
+    .anio{
+        width: 100%;
+    }
+    
+    .email{
+        width: 100%;
+    }
+    
+}
