@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+        client:
+            container_name: ilumno
+            build: .
+            ports:
+            - "80:80"
